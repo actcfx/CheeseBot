@@ -1,0 +1,29 @@
+[
+    {
+        "label": "start",
+        "kind": 5,
+        "importPath": "test2",
+        "description": "test2",
+        "peekOfCode": "start = int(input())\nend = int(input())\ntotal = sum([i for i in range(start + (start % 2 == 0), end + 1, 2)])\nprint(total)",
+        "detail": "test2",
+        "documentation": {}
+    },
+    {
+        "label": "end",
+        "kind": 5,
+        "importPath": "test2",
+        "description": "test2",
+        "peekOfCode": "end = int(input())\ntotal = sum([i for i in range(start + (start % 2 == 0), end + 1, 2)])\nprint(total)",
+        "detail": "test2",
+        "documentation": {}
+    },
+    {
+        "label": "total",
+        "kind": 5,
+        "importPath": "test2",
+        "description": "test2",
+        "peekOfCode": "total = sum([i for i in range(start + (start % 2 == 0), end + 1, 2)])\nprint(total)",
+        "detail": "test2",
+        "documentation": {}
+    }
+]
