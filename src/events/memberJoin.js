@@ -9,8 +9,8 @@ module.exports = {
     name: Events.GuildMemberAdd,
     once: false,
     execute(member) {
-        if (member.guild.id !== guildId) return;
         if (isTesting) return;
+        if (member.guild.id !== guildId) return;
 
         const welcomeChannel = member.guild.channels.cache.get(welcomeChannelId);
         const chatChannel = member.guild.channels.cache.get(chatChannelId);
@@ -21,7 +21,7 @@ module.exports = {
             .setImage('https://media.discordapp.net/attachments/1230603666558423091/1230933383593590945/433120374_1114725173177159_7991377838873626676_n.jpg?ex=663c5f4c&is=663b0dcc&hm=8dcb609c355aa6cf994ef960e0f707db798e7b582d2ad20237a9b910e9981890&format=webp&width=687&height=297&')
             .setTimestamp();
 
-        console.log(`[EVENT] | ${member.user.tag} has joined the server.`);
+        console.log(`   [EVENT] | ${member.user.tag} has joined the server.`);
         welcomeChannel.send({ content: `<@${member.id}>`, embeds: [welcomeEmbed] });
         chatChannel.send(`<@${member.id}> 向著星辰與深淵 歡迎來到原神夏洛特亞洲討論區`);
     }

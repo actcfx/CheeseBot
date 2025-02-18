@@ -28,7 +28,7 @@ const loadCommands = (commandsPath) => {
             commands.push(command.data.toJSON());
             console.log(`    [LOAD] | \`${command.data.name}\` is loaded.`);
         } else {
-            console.warn(` [WARNING] | ${file} does not have the required data and execute properties.`);
+            console.warn(` /WARNING/ - ${file} does not have the required data and execute properties.`);
         }
     }
     console.log('----------------------------------------');

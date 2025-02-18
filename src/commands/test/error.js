@@ -16,7 +16,9 @@ module.exports = {
     async execute(interaction) {
         console.log(`[/COMMAND] | <${interaction.user.tag}> executed the error_test command.`);
         if (interaction.user.id !== developerId) {
-            return interaction.reply({ content: 'This command is only for the developer!', ephemeral: true });
+            interaction.reply({ content: 'This command is only for the developer!', ephemeral: true });
+            console.log('└─ [REPLY] | This command is only for the developer!');
+            return;
         }
 
         const errorType = interaction.options.getString('type');
