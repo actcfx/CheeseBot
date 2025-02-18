@@ -10,8 +10,7 @@ async function interactionError(interaction, error) {
             {name: '錯誤訊息', value: `\`\`\`bash${error}\`\`\``},
         )
         .setTimestamp();
-    console.error(`└─ !ERROR! | ${error}\n   ├─ Interaction ID: ${interaction.id}\n   └─ User: ${interaction.user.tag}
-    `);
+    console.error(`└─ !ERROR! | ${error}\n   ├─ Interaction ID: ${interaction.id}\n   └─ User: ${interaction.user.tag}`);
     if (interaction.replied || interaction.deferred) {
         await interaction.followUp({ embeds: [errorEmbed], ephemeral: true });
     } else {

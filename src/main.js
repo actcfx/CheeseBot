@@ -26,9 +26,9 @@ const loadCommands = (commandsPath) => {
         if ('data' in command && 'execute' in command) {
             client.commands.set(command.data.name, command);
             commands.push(command.data.toJSON());
-            console.log(`    [LOAD] | \`${command.data.name}\` is loaded.`);
+            console.log(`[LOAD]     | \`${command.data.name}\` is loaded.`);
         } else {
-            console.warn(` /WARNING/ - ${file} does not have the required data and execute properties.`);
+            console.warn(`/WARNING/  - ${file} does not have the required data and execute properties.`);
         }
     }
     console.log('----------------------------------------');
@@ -83,7 +83,7 @@ const init = async () => {
         const command = interaction.client.commands.get(interaction.commandName);
 
         if (!command) {
-            console.error(`   !ERROR! - No command matching ${interaction.commandName} was found.`);
+            console.error(`!ERROR!    - No command matching ${interaction.commandName} was found.`);
             return;
         }
 
