@@ -1,4 +1,4 @@
-//! This command is only for admin users.
+//! This command is only for admin users
 
 const { SlashCommandBuilder } = require('discord.js');
 
