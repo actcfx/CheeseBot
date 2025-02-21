@@ -1,3 +1,5 @@
+//! This command is only for admin users.
+
 const { SlashCommandBuilder } = require('discord.js');
 
 module.exports = {
