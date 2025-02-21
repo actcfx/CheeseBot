@@ -1,3 +1,5 @@
+//! This command is only for the developer
+
 const { SlashCommandBuilder } = require('discord.js');
 const { developerId } = require('../../../config/config.json');
 
